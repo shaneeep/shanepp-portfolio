@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf7ff;
+    color: #34495e;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #87ceeb, #b7e7ff);
+    color: #164e70;
+    text-align: center;
+    padding: 40px 15px;
+    border-bottom: 4px solid #d1efff;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 15px 5px;
+    box-shadow: 0 3px 10px rgba(73, 150, 190, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    display: inline-block;
+    color: #2879a5;
+    text-decoration: none;
+    margin: 5px 8px;
+    padding: 9px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #c9edff;
+    color: #164e70;
+}
+
+/* Main content */
+section {
+    background-color: white;
+    margin: 30px auto;
+    padding: 30px;
+    width: 88%;
+    max-width: 850px;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(73, 150, 190, 0.12);
+    border: 1px solid #d9f1ff;
+}
+
+section h2 {
+    color: #2986b5;
+    border-bottom: 2px solid #bdeaff;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    color: #398eb8;
+}
+
+section p {
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* Profile picture */
+.profile {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #b7e7ff;
+    box-shadow: 0 4px 12px rgba(65, 153, 198, 0.2);
+}
+
+/* Project card */
+.project-card {
+    background-color: #f0faff;
+    border-left: 5px solid #87ceeb;
+    padding: 18px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: #70c5e8;
+    color: #164e70;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #a4e0fa;
+}
+
+/* Footer */
+footer {
+    background-color: #c9edff;
+    color: #32647e;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 13px;
+}
+
+/* Mobile screens */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        padding: 10px 5px;
+    }
+
+    nav a {
+        margin: 3px;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    section {
+        width: 92%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+}
